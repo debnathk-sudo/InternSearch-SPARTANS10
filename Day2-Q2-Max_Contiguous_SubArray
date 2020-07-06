@@ -1,0 +1,4 @@
+max_ending_here denotes the subarray having max sum, which ends at i-th position. i.e. ending of the subarray should be A[i]
+max_so_far denotes that from the beginning to this position what is the the max sum sub array sum. It may / may not include the i-th element.
+
+[Ref: TECH DOSE : https://youtu.be/YxuK6A3SvTs?t=105]
