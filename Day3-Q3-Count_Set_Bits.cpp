@@ -22,3 +22,7 @@ int main()
 
 return 0;
 }
+
+
+/*GUESS THE TIME COMPLEXITY
+WHY IS IT LOG(n)*/
