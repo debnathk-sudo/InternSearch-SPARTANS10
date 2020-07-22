@@ -5,8 +5,13 @@ using namespace std;
 
 double raise(double a,int b)
 {
-  if(b==1)
-    return (1/a);
+  if(b==0)
+    return 1;
+  else if(b%2==0)
+    {
+      double y=raise(a,b/2);
+      return y*y;
+    }
   else
     return (1/a)*raise(a,b-1);
 }
