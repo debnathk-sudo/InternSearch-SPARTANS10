@@ -33,6 +33,11 @@ int longestSubString(string text)
           if((sub.length()) > max) //update max
             max=sub.length();
         }
+      else if(*(sub.begin())==text[i]) //if the new char is same as the
+        {                                //first char of the substring
+          sub.erase(sub.begin());
+          sub+=text[i];
+        }
       else
         {
           sub=""; //if new char is already present, then reset sub string
@@ -48,7 +53,7 @@ int main()
 {
   string text;
   //getline(cin, text);
-  text="abdefgabefdqwx";
+  text="abcad";
   cout<<longestSubString(text)<<" is the length of the longest sub-string without repeatation.";
   return 0;
 }
